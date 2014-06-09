@@ -1,0 +1,10 @@
+---
+layout: default
+title: Your New Jekyll Site
+---
+
+{% for post in site.posts %}
+	<section id="{{id}}" class="{{post_class}}">
+		<h3 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a><span class="separator"> &middot; </span>{{ post.date | date_to_long_string }}<span class="taglist">{{tags separator=" " prefix=" &middot; "}}</span></h3>
+	</section>
+{% endfor %}

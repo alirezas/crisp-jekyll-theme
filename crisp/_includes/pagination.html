@@ -1,0 +1,17 @@
+<nav class="pagination" role="pagination">
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a class="newer-posts" href="/">&larr; Newer</a> <span class="separator">|</span>
+    {% else %}
+      <a class="newer-posts" href="/page{{paginator.previous_page}}">&larr; Newer</a> <span class="separator">|</span>
+    {% endif %}
+  {% endif %}
+
+  {% if paginator.page %}
+    <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  {% endif %}
+
+  {% if paginator.next_page %}
+    <span class="separator">|</span> <a class="older-posts" href="/page{{paginator.next_page}}">Older &rarr;</a>
+  {% endif %}
+</nav>

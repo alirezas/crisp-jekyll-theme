@@ -1,0 +1,12 @@
+name: Your New Jekyll Site
+title: Crips Theme for Jekyll
+description: "A minimalist, responsive, and open-source theme for Jekyll"
+logo: /assets/images/logo.jpg
+
+markdown: redcarpet
+pygments: true
+
+comments: true
+paginate: 5
+paginate_path: "/page:num"
+permalink: /:title.html
